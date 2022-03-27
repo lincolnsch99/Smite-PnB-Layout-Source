@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29806.167
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Smite_PnB_Layout", "QSL_PnB_Layout\Smite_PnB_Layout.csproj", "{A44BEECD-F02A-4CD1-AE37-E2ED7821F1E5}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A44BEECD-F02A-4CD1-AE37-E2ED7821F1E5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A44BEECD-F02A-4CD1-AE37-E2ED7821F1E5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A44BEECD-F02A-4CD1-AE37-E2ED7821F1E5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A44BEECD-F02A-4CD1-AE37-E2ED7821F1E5}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {94221F23-499C-4F21-8D99-AEA2692909C0}
+	EndGlobalSection
+EndGlobal

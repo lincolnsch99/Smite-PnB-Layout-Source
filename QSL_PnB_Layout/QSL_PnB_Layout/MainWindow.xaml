@@ -1,0 +1,84 @@
+﻿<Window x:Class="Smite_PnB_Layout.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Smite_PnB_Layout"
+        mc:Ignorable="d"
+        Title="P/B Display" Height="900" Width="1600" Background="#FF1A1A1A" ResizeMode="NoResize" Icon="PnB_Layout_Logo.ico" Initialized="Window_Activated" Closed="Window_Closed" SizeToContent="WidthAndHeight" SnapsToDevicePixels="True" MinWidth="1600" MinHeight="900" WindowStyle="None">
+    <Window.Resources>
+        <Style x:Key="nameDesign" TargetType="Label">
+            <Setter Property="FontFamily" Value="Resources/LEMONMILK-Medium.otf #LEMON MILK Medium"></Setter>
+        </Style>
+    </Window.Resources>
+
+    <Canvas x:Name="backgroundCanvas" Height="900" Width="1600" Background="Black">
+        <Image x:Name="mainBackground" HorizontalAlignment="Left" VerticalAlignment="Top" Stretch="Fill" Width="1600" Height="900" />
+        <Image x:Name="leftTeamDisplay" Width="650" Height="180" Stretch="Fill" Canvas.Left="0" Canvas.Top="0" />
+        <Image x:Name="rightTeamDisplay" Width="650" Height="180" Stretch="Fill" Canvas.Left="950" Canvas.Top="0" />
+        <Label x:Name="leftTeamScore" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Content="0" FontSize="100" Style="{StaticResource nameDesign}" Foreground="#FFE8E8E8" Width="180" Height="180" Canvas.Left="460"/>
+        <Label x:Name="rightTeamScore" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Content="0" FontSize="100" Style="{StaticResource nameDesign}" Foreground="#FFE8E8E8" Width="180" Height="180" Canvas.Left="960"/>
+
+        <Image x:Name="leftTeamPicks" Width="335" Height="720" Stretch="Fill" Canvas.Left="0" Canvas.Top="180" />
+        <Image x:Name="rightTeamPicks" Width="335" Height="720" Stretch="Fill" Canvas.Left="1265" Canvas.Top="180" />
+
+        <local:PickDisplay x:Name="leftTeamPick1" Width="335" Height="110" Canvas.Top="180" Canvas.Left="0"/>
+        <local:PickDisplay x:Name="leftTeamPick2" Width="335" Height="110" Canvas.Top="290" Canvas.Left="0"/>
+        <local:PickDisplay x:Name="leftTeamPick3" Width="335" Height="110" Canvas.Top="400" Canvas.Left="0"/>
+        <local:PickDisplay x:Name="leftTeamPick4" Width="335" Height="110" Canvas.Top="510" Canvas.Left="0"/>
+        <local:PickDisplay x:Name="leftTeamPick5" Width="335" Height="110" Canvas.Top="620" Canvas.Left="0"/>
+        <local:PickDisplay x:Name="rightTeamPick1" Width="335" Height="110" Canvas.Top="180" Canvas.Left="1265"/>
+        <local:PickDisplay x:Name="rightTeamPick2" Width="335" Height="110" Canvas.Top="290" Canvas.Left="1265"/>
+        <local:PickDisplay x:Name="rightTeamPick3" Width="335" Height="110" Canvas.Top="400" Canvas.Left="1265"/>
+        <local:PickDisplay x:Name="rightTeamPick4" Width="335" Height="110" Canvas.Top="510" Canvas.Left="1265"/>
+        <local:PickDisplay x:Name="rightTeamPick5" Width="335" Height="110" Canvas.Top="620" Canvas.Left="1265"/>
+        <local:BanDisplay x:Name="leftTeamBan1" Height="165" Width="67" Canvas.Top="735" Canvas.Left="0"/>
+        <local:BanDisplay x:Name="leftTeamBan2" Height="165" Width="67" Canvas.Top="735" Canvas.Left="67"/>
+        <local:BanDisplay x:Name="leftTeamBan3" Height="165" Width="67" Canvas.Top="735" Canvas.Left="134"/>
+        <local:BanDisplay x:Name="leftTeamBan4" Height="165" Width="67" Canvas.Top="735" Canvas.Left="201"/>
+        <local:BanDisplay x:Name="leftTeamBan5" Height="165" Width="67" Canvas.Top="735" Canvas.Left="268"/>
+        <local:BanDisplay x:Name="rightTeamBan5" Height="165" Width="67" Canvas.Top="735" Canvas.Left="1265"/>
+        <local:BanDisplay x:Name="rightTeamBan4" Height="165" Width="67" Canvas.Top="735" Canvas.Left="1332"/>
+        <local:BanDisplay x:Name="rightTeamBan3" Height="165" Width="67" Canvas.Top="735" Canvas.Left="1399"/>
+        <local:BanDisplay x:Name="rightTeamBan2" Height="165" Width="67" Canvas.Top="735" Canvas.Left="1466"/>
+        <local:BanDisplay x:Name="rightTeamBan1" Height="165" Width="67" Canvas.Top="735" Canvas.Left="1533"/>
+        <MediaElement x:Name="soundplayer" HorizontalAlignment="Left" LoadedBehavior="Manual" Height="100" Margin="0,0,0,0" VerticalAlignment="Top"/>
+        <Canvas x:Name="leftTeamTopBans" Width="300" Height="200" Canvas.Left="335" Canvas.Top="700">
+            <local:TopBanDisplay x:Name="leftTopBan1" Width="60" Height="60" Canvas.Left="10" Canvas.Top="60"></local:TopBanDisplay>
+            <local:TopBanDisplay x:Name="leftTopBan2" Width="60" Height="60" Canvas.Left="90" Canvas.Top="60"></local:TopBanDisplay>
+            <local:TopBanDisplay x:Name="leftTopBan3" Width="60" Height="60" Canvas.Left="170" Canvas.Top="60"></local:TopBanDisplay>
+            <local:TopBanDisplay x:Name="leftTopBan4" Width="60" Height="60" Canvas.Left="10" Canvas.Top="130"></local:TopBanDisplay>
+            <local:TopBanDisplay x:Name="leftTopBan5" Width="60" Height="60" Canvas.Left="90" Canvas.Top="130"></local:TopBanDisplay>
+            <local:TopBanDisplay x:Name="leftTopBan6" Width="60" Height="60" Canvas.Left="170" Canvas.Top="130"></local:TopBanDisplay>
+            <TextBlock x:Name="leftTeamTopBansLabel" TextWrapping="Wrap" Style="{StaticResource textBlockStyle}" FontSize="18" Text="Left Team" Foreground="#FFE8E8E0" Canvas.Left="10" Canvas.Top="25" Width="290" Height="25"/>
+            <TextBlock x:Name="leftTopBansLabel" TextWrapping="Wrap" Style="{StaticResource textBlockStyle}" FontSize="10 " Text="Top Bans Against" Foreground="#FFE8E8E0" Canvas.Left="10" Canvas.Top="10" Width="290" Height="25"/>
+        </Canvas>
+        <Canvas x:Name="rightTeamTopBans" Width="300" Height="200" Canvas.Left="965" Canvas.Top="700">
+            <local:TopBanDisplay x:Name="rightTopBan1" Width="60" Height="60" Canvas.Left="230" Canvas.Top="60"/>
+            <local:TopBanDisplay x:Name="rightTopBan2" Width="60" Height="60" Canvas.Left="150" Canvas.Top="60"></local:TopBanDisplay>
+            <local:TopBanDisplay x:Name="rightTopBan3" Width="60" Height="60" Canvas.Left="70" Canvas.Top="60"></local:TopBanDisplay>
+            <local:TopBanDisplay x:Name="rightTopBan4" Width="60" Height="60" Canvas.Left="230" Canvas.Top="130"></local:TopBanDisplay>
+            <local:TopBanDisplay x:Name="rightTopBan5" Width="60" Height="60" Canvas.Left="150" Canvas.Top="130"></local:TopBanDisplay>
+            <local:TopBanDisplay x:Name="rightTopBan6" Width="60" Height="60" Canvas.Left="70" Canvas.Top="130"></local:TopBanDisplay>
+            <TextBlock x:Name="rightTeamTopBansLabel" TextWrapping="Wrap" Style="{StaticResource textBlockStyle}" FontSize="18" Text="Right Team" Foreground="#FFE8E8E0" Canvas.Top="25" Width="290" Height="25" TextAlignment="Right"/>
+            <TextBlock x:Name="rightTopBansLabel" TextWrapping="Wrap" Style="{StaticResource textBlockStyle}" FontSize="10" Text="Top Bans Against" Foreground="#FFE8E8E0" Width="290" Canvas.Top="10" Height="25" TextAlignment="Right"/>
+        </Canvas>
+        <Canvas x:Name="playerNamesGrid" Width="450" Height="140" Canvas.Left="575" Canvas.Top="756">
+            <Label x:Name="soloDisplay"  Style="{StaticResource nameDesign}" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Content="Solo" FontSize="12" Foreground="#FFE8E8E8" Width="125" Canvas.Left="162.5"  BorderBrush="#FFE8E8E8" BorderThickness="2,0" Height="25"></Label>
+            <Label x:Name="jungleDisplay" Style="{StaticResource ResourceKey=nameDesign}" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Content="Jungle" FontSize="12" Foreground="#FFE8E8E8" Width="125" Canvas.Left="162.5" Canvas.Top="28" BorderBrush="#FFE8E8E8" BorderThickness="2,0" Height="25"/>
+            <Label x:Name="midDisplay"  Style="{StaticResource ResourceKey=nameDesign}" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Content="Mid" FontSize="12 " Foreground="#FFE8E8E8" Width="125" Canvas.Left="162.5" Canvas.Top="56" BorderBrush="#FFE8E8E8" BorderThickness="2,0" Height="25" VerticalAlignment="Top"/>
+            <Label x:Name="supportDisplay" Style="{StaticResource ResourceKey=nameDesign}" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Content="Support" FontSize="12 " Foreground="#FFE8E8E8" Width="125" Canvas.Left="162.5" Canvas.Top="84" BorderBrush="#FFE8E8E8" BorderThickness="2,0" Height="25" VerticalAlignment="Top"/>
+            <Label x:Name="carryDisplay" Style="{StaticResource ResourceKey=nameDesign}" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Content="Carry" FontSize="12 " Foreground="#FFE8E8E8" Width="125" Canvas.Left="162.5" Canvas.Top="112" BorderBrush="#FFE8E8E8" BorderThickness="2,0" Height="25" VerticalAlignment="Top"/>
+            <Label x:Name="leftTeamSolo" Style="{StaticResource nameDesign}" HorizontalContentAlignment="Right" VerticalContentAlignment="Center" Content="playerName1" FontSize="12" Foreground="#FFE8E8E8" Height="25" VerticalAlignment="Top" Width="160"/>
+            <Label x:Name="leftTeamJung" Style="{StaticResource nameDesign}" HorizontalContentAlignment="Right" VerticalContentAlignment="Center" Content="playerName1" FontSize="12" Foreground="#FFE8E8E8" Height="25" VerticalAlignment="Top" Canvas.Top="28" Width="160"/>
+            <Label x:Name="leftTeamMid" Style="{StaticResource nameDesign}" HorizontalContentAlignment="Right" VerticalContentAlignment="Center" Content="playerName1" FontSize="12" Foreground="#FFE8E8E8" Height="25" VerticalAlignment="Top" Canvas.Top="56" Width="160"/>
+            <Label x:Name="leftTeamSupp" Style="{StaticResource nameDesign}" HorizontalContentAlignment="Right" VerticalContentAlignment="Center" Content="playerName1" FontSize="12" Foreground="#FFE8E8E8" Height="25" VerticalAlignment="Top" Canvas.Top="84" Width="160"/>
+            <Label x:Name="leftTeamCarry" Style="{StaticResource nameDesign}" HorizontalContentAlignment="Right" VerticalContentAlignment="Center" Content="playerName1" FontSize="12" Foreground="#FFE8E8E8" Height="25" VerticalAlignment="Top" Canvas.Top="112" Width="160"/>
+            <Label x:Name="rightTeamSolo" Style="{StaticResource nameDesign}" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" Content="playerName1" FontSize="12" Foreground="#FFE8E8E8" Height="25" VerticalAlignment="Top" Canvas.Left="289" Width="160"/>
+            <Label x:Name="rightTeamJung" Style="{StaticResource nameDesign}" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" Content="playerName1" FontSize="12" Foreground="#FFE8E8E8" Height="25" VerticalAlignment="Top" Canvas.Left="289" Canvas.Top="28" Width="160"/>
+            <Label x:Name="rightTeamMid" Style="{StaticResource nameDesign}" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" Content="playerName1" FontSize="12" Foreground="#FFE8E8E8" Height="25" VerticalAlignment="Top" Canvas.Left="289" Canvas.Top="56" Width="160"/>
+            <Label x:Name="rightTeamSupp" Style="{StaticResource nameDesign}" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" Content="playerName1" FontSize="12" Foreground="#FFE8E8E8" Height="25" VerticalAlignment="Top" Canvas.Left="289" Canvas.Top="84" Width="160"/>
+            <Label x:Name="rightTeamCarry" Style="{StaticResource nameDesign}" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" Content="playerName1" FontSize="12" Foreground="#FFE8E8E8" Height="25" VerticalAlignment="Top" Canvas.Left="289" Canvas.Top="112" Width="160"/>
+        </Canvas>
+    </Canvas>
+</Window> 

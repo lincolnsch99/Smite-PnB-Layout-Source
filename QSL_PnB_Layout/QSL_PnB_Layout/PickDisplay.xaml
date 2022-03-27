@@ -1,0 +1,23 @@
+﻿<UserControl x:Class="Smite_PnB_Layout.PickDisplay"
+             x:Name="UserControlObject"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:Smite_PnB_Layout"
+             mc:Ignorable="d" 
+             d:DesignHeight="110" d:DesignWidth="335" Foreground="Black" ClipToBounds="True" SizeChanged="UserControlObject_SizeChanged">
+
+
+    <Canvas x:Name="canvas" Width="335" Height="110">
+        <MediaElement x:Name="soundPlayer" LoadedBehavior="Manual" Source="Achilles.mp3"></MediaElement>
+        <Image x:Name ="godImage" Height="110" Width="335" Stretch="Fill" Canvas.Top="0" Canvas.Left="0">
+            <Image.Source>
+                <BitmapImage UriSource=""></BitmapImage>
+            </Image.Source>
+        </Image>
+        <Rectangle x:Name="hoveredRect" Fill="#CC000000" Height="110" Stroke="Black" Width="335" Canvas.Left="0" Canvas.Top="0" Visibility="Visible" SnapsToDevicePixels="True"/>
+
+        <Label x:Name="godName" Content="Achilles" FontSize="12"  Style="{StaticResource nameDesign}" HorizontalContentAlignment="Center" Canvas.Bottom="0" Canvas.Right="0" Foreground="#FFF0F0F0" Height="25" Width="160" Background="Black"></Label>
+    </Canvas>
+</UserControl>

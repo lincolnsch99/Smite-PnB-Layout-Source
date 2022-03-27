@@ -1,0 +1,2 @@
+﻿-resources_path-
+C:/Users/Link the Exalted/Desktop/QSL_PnB_Resources

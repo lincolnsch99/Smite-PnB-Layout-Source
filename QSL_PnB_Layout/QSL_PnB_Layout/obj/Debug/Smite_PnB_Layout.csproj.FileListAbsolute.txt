@@ -1,0 +1,104 @@
+C:\Users\Link the Exalted\Documents\QSL_Ban_Tool\QSL_PnB_Layout\QSL_PnB_Layout\bin\Debug\Smite_Pnb_Layout.exe.config
+C:\Users\Link the Exalted\Documents\QSL_Ban_Tool\QSL_PnB_Layout\QSL_PnB_Layout\bin\Debug\Smite_Pnb_Layout.exe.manifest
+C:\Users\Link the Exalted\Documents\QSL_Ban_Tool\QSL_PnB_Layout\QSL_PnB_Layout\bin\Debug\Smite_Pnb_Layout.application
+C:\Users\Link the Exalted\Documents\QSL_Ban_Tool\QSL_PnB_Layout\QSL_PnB_Layout\bin\Debug\Smite_Pnb_Layout.exe
+C:\Users\Link the Exalted\Documents\QSL_Ban_Tool\QSL_PnB_Layout\QSL_PnB_Layout\bin\Debug\Smite_Pnb_Layout.pdb
+C:\Users\Link the Exalted\Documents\QSL_Ban_Tool\QSL_PnB_Layout\QSL_PnB_Layout\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\Link the Exalted\Documents\QSL_Ban_Tool\QSL_PnB_Layout\QSL_PnB_Layout\bin\Debug\System.Buffers.dll
+C:\Users\Link the Exalted\Documents\QSL_Ban_Tool\QSL_PnB_Layout\QSL_PnB_Layout\bin\Debug\System.Memory.dll
+C:\Users\Link the Exalted\Documents\QSL_Ban_Tool\QSL_PnB_Layout\QSL_PnB_Layout\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\Link the Exalted\Documents\QSL_Ban_Tool\QSL_PnB_Layout\QSL_PnB_Layout\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\Link the Exalted\Documents\QSL_Ban_Tool\QSL_PnB_Layout\QSL_PnB_Layout\bin\Debug\System.Text.Encodings.Web.dll
+C:\Users\Link the Exalted\Documents\QSL_Ban_Tool\QSL_PnB_Layout\QSL_PnB_Layout\bin\Debug\System.Text.Json.dll
+C:\Users\Link the Exalted\Documents\QSL_Ban_Tool\QSL_PnB_Layout\QSL_PnB_Layout\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\Users\Link the Exalted\Documents\QSL_Ban_Tool\QSL_PnB_Layout\QSL_PnB_Layout\bin\Debug\System.ValueTuple.dll
+C:\Users\Link the Exalted\Documents\QSL_Ban_Tool\QSL_PnB_Layout\QSL_PnB_Layout\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
+C:\Users\Link the Exalted\Documents\QSL_Ban_Tool\QSL_PnB_Layout\QSL_PnB_Layout\bin\Debug\System.Buffers.xml
+C:\Users\Link the Exalted\Documents\QSL_Ban_Tool\QSL_PnB_Layout\QSL_PnB_Layout\bin\Debug\System.Memory.xml
+C:\Users\Link the Exalted\Documents\QSL_Ban_Tool\QSL_PnB_Layout\QSL_PnB_Layout\bin\Debug\System.Numerics.Vectors.xml
+C:\Users\Link the Exalted\Documents\QSL_Ban_Tool\QSL_PnB_Layout\QSL_PnB_Layout\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\Link the Exalted\Documents\QSL_Ban_Tool\QSL_PnB_Layout\QSL_PnB_Layout\bin\Debug\System.Text.Encodings.Web.xml
+C:\Users\Link the Exalted\Documents\QSL_Ban_Tool\QSL_PnB_Layout\QSL_PnB_Layout\bin\Debug\System.Text.Json.xml
+C:\Users\Link the Exalted\Documents\QSL_Ban_Tool\QSL_PnB_Layout\QSL_PnB_Layout\bin\Debug\System.Threading.Tasks.Extensions.xml
+C:\Users\Link the Exalted\Documents\QSL_Ban_Tool\QSL_PnB_Layout\QSL_PnB_Layout\bin\Debug\System.ValueTuple.xml
+C:\Users\Link the Exalted\Documents\QSL_Ban_Tool\QSL_PnB_Layout\QSL_PnB_Layout\obj\Debug\BanDisplay.g.cs
+C:\Users\Link the Exalted\Documents\QSL_Ban_Tool\QSL_PnB_Layout\QSL_PnB_Layout\obj\Debug\MainWindow.g.cs
+C:\Users\Link the Exalted\Documents\QSL_Ban_Tool\QSL_PnB_Layout\QSL_PnB_Layout\obj\Debug\PickDisplay.g.cs
+C:\Users\Link the Exalted\Documents\QSL_Ban_Tool\QSL_PnB_Layout\QSL_PnB_Layout\obj\Debug\SettingsWindow.g.cs
+C:\Users\Link the Exalted\Documents\QSL_Ban_Tool\QSL_PnB_Layout\QSL_PnB_Layout\obj\Debug\TopBanDisplay.g.cs
+C:\Users\Link the Exalted\Documents\QSL_Ban_Tool\QSL_PnB_Layout\QSL_PnB_Layout\obj\Debug\App.g.cs
+C:\Users\Link the Exalted\Documents\QSL_Ban_Tool\QSL_PnB_Layout\QSL_PnB_Layout\obj\Debug\Smite_Pnb_Layout_Content.g.cs
+C:\Users\Link the Exalted\Documents\QSL_Ban_Tool\QSL_PnB_Layout\QSL_PnB_Layout\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\Link the Exalted\Documents\QSL_Ban_Tool\QSL_PnB_Layout\QSL_PnB_Layout\obj\Debug\Smite_Pnb_Layout_MarkupCompile.cache
+C:\Users\Link the Exalted\Documents\QSL_Ban_Tool\QSL_PnB_Layout\QSL_PnB_Layout\obj\Debug\Smite_Pnb_Layout_MarkupCompile.lref
+C:\Users\Link the Exalted\Documents\QSL_Ban_Tool\QSL_PnB_Layout\QSL_PnB_Layout\obj\Debug\App.baml
+C:\Users\Link the Exalted\Documents\QSL_Ban_Tool\QSL_PnB_Layout\QSL_PnB_Layout\obj\Debug\BanDisplay.baml
+C:\Users\Link the Exalted\Documents\QSL_Ban_Tool\QSL_PnB_Layout\QSL_PnB_Layout\obj\Debug\MainWindow.baml
+C:\Users\Link the Exalted\Documents\QSL_Ban_Tool\QSL_PnB_Layout\QSL_PnB_Layout\obj\Debug\PickDisplay.baml
+C:\Users\Link the Exalted\Documents\QSL_Ban_Tool\QSL_PnB_Layout\QSL_PnB_Layout\obj\Debug\SettingsWindow.baml
+C:\Users\Link the Exalted\Documents\QSL_Ban_Tool\QSL_PnB_Layout\QSL_PnB_Layout\obj\Debug\TopBanDisplay.baml
+C:\Users\Link the Exalted\Documents\QSL_Ban_Tool\QSL_PnB_Layout\QSL_PnB_Layout\obj\Debug\Smite_Pnb_Layout.g.resources
+C:\Users\Link the Exalted\Documents\QSL_Ban_Tool\QSL_PnB_Layout\QSL_PnB_Layout\obj\Debug\Smite_PnB_Layout.Properties.Resources.resources
+C:\Users\Link the Exalted\Documents\QSL_Ban_Tool\QSL_PnB_Layout\QSL_PnB_Layout\obj\Debug\Smite_PnB_Layout.csproj.GenerateResource.cache
+C:\Users\Link the Exalted\Documents\QSL_Ban_Tool\QSL_PnB_Layout\QSL_PnB_Layout\obj\Debug\Smite_Pnb_Layout.TrustInfo.xml
+C:\Users\Link the Exalted\Documents\QSL_Ban_Tool\QSL_PnB_Layout\QSL_PnB_Layout\obj\Debug\Smite_Pnb_Layout.exe.manifest
+C:\Users\Link the Exalted\Documents\QSL_Ban_Tool\QSL_PnB_Layout\QSL_PnB_Layout\obj\Debug\Smite_Pnb_Layout.application
+C:\Users\Link the Exalted\Documents\QSL_Ban_Tool\QSL_PnB_Layout\QSL_PnB_Layout\obj\Debug\Smite_PnB_Layout.csproj.CopyComplete
+C:\Users\Link the Exalted\Documents\QSL_Ban_Tool\QSL_PnB_Layout\QSL_PnB_Layout\obj\Debug\Smite_Pnb_Layout.exe
+C:\Users\Link the Exalted\Documents\QSL_Ban_Tool\QSL_PnB_Layout\QSL_PnB_Layout\obj\Debug\Smite_Pnb_Layout.pdb
+C:\Users\Link the Exalted\Documents\QSL_Ban_Tool\QSL_PnB_Layout\QSL_PnB_Layout\obj\Debug\Smite_PnB_Layout.csprojAssemblyReference.cache
+C:\Users\Link the Exalted\Documents\QSL_Ban_Tool\QSL_PnB_Layout\QSL_PnB_Layout\obj\Debug\InGameOverlay.g.cs
+C:\Users\Link the Exalted\Documents\QSL_Ban_Tool\QSL_PnB_Layout\QSL_PnB_Layout\obj\Debug\InGameOverlay.baml
+D:\Smite-PnB-Layout\QSL_PnB_Layout\QSL_PnB_Layout\bin\Debug\Smite_Pnb_Layout.exe.config
+D:\Smite-PnB-Layout\QSL_PnB_Layout\QSL_PnB_Layout\bin\Debug\Smite_Pnb_Layout.exe.manifest
+D:\Smite-PnB-Layout\QSL_PnB_Layout\QSL_PnB_Layout\bin\Debug\Smite_Pnb_Layout.application
+D:\Smite-PnB-Layout\QSL_PnB_Layout\QSL_PnB_Layout\bin\Debug\Smite_Pnb_Layout.exe
+D:\Smite-PnB-Layout\QSL_PnB_Layout\QSL_PnB_Layout\bin\Debug\Smite_Pnb_Layout.pdb
+D:\Smite-PnB-Layout\QSL_PnB_Layout\QSL_PnB_Layout\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+D:\Smite-PnB-Layout\QSL_PnB_Layout\QSL_PnB_Layout\bin\Debug\System.Buffers.dll
+D:\Smite-PnB-Layout\QSL_PnB_Layout\QSL_PnB_Layout\bin\Debug\System.Memory.dll
+D:\Smite-PnB-Layout\QSL_PnB_Layout\QSL_PnB_Layout\bin\Debug\System.Numerics.Vectors.dll
+D:\Smite-PnB-Layout\QSL_PnB_Layout\QSL_PnB_Layout\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+D:\Smite-PnB-Layout\QSL_PnB_Layout\QSL_PnB_Layout\bin\Debug\System.Text.Encodings.Web.dll
+D:\Smite-PnB-Layout\QSL_PnB_Layout\QSL_PnB_Layout\bin\Debug\System.Text.Json.dll
+D:\Smite-PnB-Layout\QSL_PnB_Layout\QSL_PnB_Layout\bin\Debug\System.Threading.Tasks.Extensions.dll
+D:\Smite-PnB-Layout\QSL_PnB_Layout\QSL_PnB_Layout\bin\Debug\System.ValueTuple.dll
+D:\Smite-PnB-Layout\QSL_PnB_Layout\QSL_PnB_Layout\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
+D:\Smite-PnB-Layout\QSL_PnB_Layout\QSL_PnB_Layout\bin\Debug\System.Buffers.xml
+D:\Smite-PnB-Layout\QSL_PnB_Layout\QSL_PnB_Layout\bin\Debug\System.Memory.xml
+D:\Smite-PnB-Layout\QSL_PnB_Layout\QSL_PnB_Layout\bin\Debug\System.Numerics.Vectors.xml
+D:\Smite-PnB-Layout\QSL_PnB_Layout\QSL_PnB_Layout\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+D:\Smite-PnB-Layout\QSL_PnB_Layout\QSL_PnB_Layout\bin\Debug\System.Text.Encodings.Web.xml
+D:\Smite-PnB-Layout\QSL_PnB_Layout\QSL_PnB_Layout\bin\Debug\System.Text.Json.xml
+D:\Smite-PnB-Layout\QSL_PnB_Layout\QSL_PnB_Layout\bin\Debug\System.Threading.Tasks.Extensions.xml
+D:\Smite-PnB-Layout\QSL_PnB_Layout\QSL_PnB_Layout\bin\Debug\System.ValueTuple.xml
+D:\Smite-PnB-Layout\QSL_PnB_Layout\QSL_PnB_Layout\obj\Debug\Smite_PnB_Layout.csprojAssemblyReference.cache
+D:\Smite-PnB-Layout\QSL_PnB_Layout\QSL_PnB_Layout\obj\Debug\BanDisplay.g.cs
+D:\Smite-PnB-Layout\QSL_PnB_Layout\QSL_PnB_Layout\obj\Debug\InGameOverlay.g.cs
+D:\Smite-PnB-Layout\QSL_PnB_Layout\QSL_PnB_Layout\obj\Debug\MainWindow.g.cs
+D:\Smite-PnB-Layout\QSL_PnB_Layout\QSL_PnB_Layout\obj\Debug\PickDisplay.g.cs
+D:\Smite-PnB-Layout\QSL_PnB_Layout\QSL_PnB_Layout\obj\Debug\SettingsWindow.g.cs
+D:\Smite-PnB-Layout\QSL_PnB_Layout\QSL_PnB_Layout\obj\Debug\TopBanDisplay.g.cs
+D:\Smite-PnB-Layout\QSL_PnB_Layout\QSL_PnB_Layout\obj\Debug\App.g.cs
+D:\Smite-PnB-Layout\QSL_PnB_Layout\QSL_PnB_Layout\obj\Debug\Smite_Pnb_Layout_Content.g.cs
+D:\Smite-PnB-Layout\QSL_PnB_Layout\QSL_PnB_Layout\obj\Debug\GeneratedInternalTypeHelper.g.cs
+D:\Smite-PnB-Layout\QSL_PnB_Layout\QSL_PnB_Layout\obj\Debug\Smite_Pnb_Layout_MarkupCompile.cache
+D:\Smite-PnB-Layout\QSL_PnB_Layout\QSL_PnB_Layout\obj\Debug\Smite_Pnb_Layout_MarkupCompile.lref
+D:\Smite-PnB-Layout\QSL_PnB_Layout\QSL_PnB_Layout\obj\Debug\App.baml
+D:\Smite-PnB-Layout\QSL_PnB_Layout\QSL_PnB_Layout\obj\Debug\BanDisplay.baml
+D:\Smite-PnB-Layout\QSL_PnB_Layout\QSL_PnB_Layout\obj\Debug\InGameOverlay.baml
+D:\Smite-PnB-Layout\QSL_PnB_Layout\QSL_PnB_Layout\obj\Debug\MainWindow.baml
+D:\Smite-PnB-Layout\QSL_PnB_Layout\QSL_PnB_Layout\obj\Debug\PickDisplay.baml
+D:\Smite-PnB-Layout\QSL_PnB_Layout\QSL_PnB_Layout\obj\Debug\SettingsWindow.baml
+D:\Smite-PnB-Layout\QSL_PnB_Layout\QSL_PnB_Layout\obj\Debug\TopBanDisplay.baml
+D:\Smite-PnB-Layout\QSL_PnB_Layout\QSL_PnB_Layout\obj\Debug\Smite_Pnb_Layout.g.resources
+D:\Smite-PnB-Layout\QSL_PnB_Layout\QSL_PnB_Layout\obj\Debug\Smite_PnB_Layout.Properties.Resources.resources
+D:\Smite-PnB-Layout\QSL_PnB_Layout\QSL_PnB_Layout\obj\Debug\Smite_PnB_Layout.csproj.GenerateResource.cache
+D:\Smite-PnB-Layout\QSL_PnB_Layout\QSL_PnB_Layout\obj\Debug\Smite_Pnb_Layout.TrustInfo.xml
+D:\Smite-PnB-Layout\QSL_PnB_Layout\QSL_PnB_Layout\obj\Debug\Smite_Pnb_Layout.exe.manifest
+D:\Smite-PnB-Layout\QSL_PnB_Layout\QSL_PnB_Layout\obj\Debug\Smite_Pnb_Layout.application
+D:\Smite-PnB-Layout\QSL_PnB_Layout\QSL_PnB_Layout\obj\Debug\Smite_PnB_Layout.csproj.CopyComplete
+D:\Smite-PnB-Layout\QSL_PnB_Layout\QSL_PnB_Layout\obj\Debug\Smite_Pnb_Layout.exe
+D:\Smite-PnB-Layout\QSL_PnB_Layout\QSL_PnB_Layout\obj\Debug\Smite_Pnb_Layout.pdb
+D:\Smite-PnB-Layout\QSL_PnB_Layout\QSL_PnB_Layout\obj\Debug\AdvancedSettings.g.cs
+D:\Smite-PnB-Layout\QSL_PnB_Layout\QSL_PnB_Layout\obj\Debug\AdvancedSettings.baml
