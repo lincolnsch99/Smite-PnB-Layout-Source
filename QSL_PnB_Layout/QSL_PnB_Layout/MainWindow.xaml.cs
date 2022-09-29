@@ -24,18 +24,18 @@ namespace Smite_PnB_Layout
     {
         private SettingsWindow settingsWindow;
         private InGameOverlay inGameOverlay;
-        private List<ComboBox> pickCombos;
-        private List<PickDisplay> pickDisplays;
-        private List<CheckBox> lockedCheckboxes;
-        private List<ComboBox> banCombos;
-        private List<BanDisplay> banDisplays;
+        private List<ComboBox> pickCombos = new List<ComboBox>();
+        private List<PickDisplay> pickDisplays = new List<PickDisplay>();
+        private List<CheckBox> lockedCheckboxes = new List<CheckBox>();
+        private List<ComboBox> banCombos = new List<ComboBox>();
+        private List<BanDisplay> banDisplays = new List<BanDisplay>();
         private double volume;
         private string resourcesPath = "", animType = "None";
         private VerticalAlignment namesVertAlign = VerticalAlignment.Bottom;
         private HorizontalAlignment namesHorAlign = HorizontalAlignment.Center;
         private int namesHorAlignIndex = 1, namesVerAlignInex = 2, animTypeIndex = 0, resolutionIndex = 0;
-        private List<BanData> banDatas;
-        private bool exitingApp = false;
+        private List<BanData> banDatas = new List<BanData>();
+        private bool exitingApp = false, showGodNames = true;
         //private SubmissionHistory submissionHistory;
 
         public double Volume { get => volume; set => volume = value; }
@@ -76,7 +76,15 @@ namespace Smite_PnB_Layout
                 }
             }
         }
-
+        public bool ShowGodNames
+        {
+            get => showGodNames; 
+            set
+            {
+                showGodNames = value;
+                SetGodNamesDisplayOnPicks(showGodNames);
+            }
+        }
         public MainWindow()
         {
             InitializeComponent();
@@ -159,11 +167,15 @@ namespace Smite_PnB_Layout
                     pickDisplays[i].LockCheck = lockedCheckboxes[i];
                     if (i > 4)
                         pickDisplays[i].Reversed = true;
+                    else
+                        pickDisplays[i].Reversed = false;
 
                     banDisplays[i].MainWindow = this;
                     banDisplays[i].BanCombo = banCombos[i];
                     if (i > 4)
                         banDisplays[i].Reversed = true;
+                    else
+                        banDisplays[i].Reversed = false;
                 }
             }
             catch (Exception e)
@@ -435,6 +447,13 @@ namespace Smite_PnB_Layout
                         {
                             resolutionIndex = int.Parse(reader.ReadLine());
                         }
+                        else if (line == "-show_god_names-")
+                        {
+                            if (reader.ReadLine() == "True")
+                                ShowGodNames = true;
+                            else
+                                ShowGodNames = false;
+                        }
                     }
                 }
                 catch (Exception e2)
@@ -469,6 +488,11 @@ namespace Smite_PnB_Layout
                 writer.WriteLine(resourcesPath);
                 writer.WriteLine("-resolution-");
                 writer.WriteLine(resolutionIndex.ToString());
+                writer.WriteLine("-show_god_names-");
+                if (showGodNames)
+                    writer.WriteLine("True");
+                else
+                    writer.WriteLine("False");
                 writer.Close();
 
                 foreach (BanData data in banDatas)
@@ -606,8 +630,7 @@ namespace Smite_PnB_Layout
                     settingsWindow.teamOneCombo.SelectedIndex = teamOneIndex;
                     settingsWindow.teamTwoCombo.SelectedIndex = teamTwoIndex;
 
-
-                    string[] godPics = Directory.GetFiles(resourcesPath + "/CharacterImages/Picks", "*.png");
+                    string[] lines = File.ReadAllLines(resourcesPath + "/CharactersList.txt");
                     foreach (ComboBox box in this.pickCombos)
                     {
                         box.Items.Clear();
@@ -615,16 +638,14 @@ namespace Smite_PnB_Layout
                         empty.Content = "Empty";
                         empty.Style = FindResource("comboDesign") as Style;
                         box.Items.Add(empty);
-                        foreach (string god in godPics)
+                        foreach (string god in lines)
                         {
-                            string godFormatted = god.Replace("\\", "/");
-                            string godName = Path.GetFileNameWithoutExtension(godFormatted);
-                            if (godName != "NameOverlay")
+                            if (god != "NameOverlay")
                             {
                                 Style comboStyle = FindResource("comboDesign") as Style;
                                 ComboBoxItem comboItem = new ComboBoxItem();
                                 comboItem.Style = comboStyle;
-                                comboItem.Content = godName;
+                                comboItem.Content = god;
                                 box.Items.Add(comboItem);
                             }
                         }
@@ -637,16 +658,14 @@ namespace Smite_PnB_Layout
                         empty.Content = "Empty";
                         empty.Style = FindResource("comboDesign") as Style;
                         box.Items.Add(empty);
-                        foreach (string god in godPics)
+                        foreach (string god in lines)
                         {
-                            string godFormatted = god.Replace("\\", "/");
-                            string godName = Path.GetFileNameWithoutExtension(godFormatted);
-                            if (godName != "NameOverlay")
+                            if (god != "NameOverlay")
                             {
                                 Style comboStyle = FindResource("comboDesign") as Style;
                                 ComboBoxItem comboItem = new ComboBoxItem();
                                 comboItem.Style = comboStyle;
-                                comboItem.Content = godName;
+                                comboItem.Content = god;
                                 box.Items.Add(comboItem);
                             }
                         }
@@ -1206,6 +1225,15 @@ namespace Smite_PnB_Layout
                 settingsWindow.AdvancedSet.Close();
 
             }
+        }
+
+        public void SetGodNamesDisplayOnPicks(bool set)
+        {
+            foreach(PickDisplay pick in pickDisplays)
+            {
+                pick.SetNameDisplayStatus(set);
+            }
+            showGodNames = set;
         }
 
     }

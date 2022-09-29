@@ -497,5 +497,6 @@ namespace Smite_PnB_Layout
             mainWindow.carryDisplay.Foreground = color;
             mainWindow.carryDisplay.BorderBrush = color;
         }
+
     }
 }

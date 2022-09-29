@@ -1,4 +1,4 @@
 -resources_path-
-C:/Users/Link the Exalted/Desktop/PnB-Layout-Official/PnB-Layout-Public/Resources
+C:/Users/Link the Exalted/Desktop/Smite_Layout_Resource_Folders/RSL/Resources/Resources
 -resolution-
 0

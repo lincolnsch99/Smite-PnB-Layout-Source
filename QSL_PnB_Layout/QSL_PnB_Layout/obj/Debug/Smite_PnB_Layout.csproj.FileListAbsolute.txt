@@ -72,7 +72,6 @@ D:\Smite-PnB-Layout\QSL_PnB_Layout\QSL_PnB_Layout\bin\Debug\System.Text.Encoding
 D:\Smite-PnB-Layout\QSL_PnB_Layout\QSL_PnB_Layout\bin\Debug\System.Text.Json.xml
 D:\Smite-PnB-Layout\QSL_PnB_Layout\QSL_PnB_Layout\bin\Debug\System.Threading.Tasks.Extensions.xml
 D:\Smite-PnB-Layout\QSL_PnB_Layout\QSL_PnB_Layout\bin\Debug\System.ValueTuple.xml
-D:\Smite-PnB-Layout\QSL_PnB_Layout\QSL_PnB_Layout\obj\Debug\Smite_PnB_Layout.csprojAssemblyReference.cache
 D:\Smite-PnB-Layout\QSL_PnB_Layout\QSL_PnB_Layout\obj\Debug\BanDisplay.g.cs
 D:\Smite-PnB-Layout\QSL_PnB_Layout\QSL_PnB_Layout\obj\Debug\InGameOverlay.g.cs
 D:\Smite-PnB-Layout\QSL_PnB_Layout\QSL_PnB_Layout\obj\Debug\MainWindow.g.cs
@@ -102,3 +101,6 @@ D:\Smite-PnB-Layout\QSL_PnB_Layout\QSL_PnB_Layout\obj\Debug\Smite_Pnb_Layout.exe
 D:\Smite-PnB-Layout\QSL_PnB_Layout\QSL_PnB_Layout\obj\Debug\Smite_Pnb_Layout.pdb
 D:\Smite-PnB-Layout\QSL_PnB_Layout\QSL_PnB_Layout\obj\Debug\AdvancedSettings.g.cs
 D:\Smite-PnB-Layout\QSL_PnB_Layout\QSL_PnB_Layout\obj\Debug\AdvancedSettings.baml
+D:\Smite-PnB-Layout\QSL_PnB_Layout\QSL_PnB_Layout\obj\Debug\Smite_PnB_Layout.csproj.AssemblyReference.cache
+D:\Smite-PnB-Layout\QSL_PnB_Layout\QSL_PnB_Layout\obj\Debug\Smite_PnB_Layout.csproj.SuggestedBindingRedirects.cache
+D:\Smite-PnB-Layout\QSL_PnB_Layout\QSL_PnB_Layout\obj\Debug\Smite_PnB_Layout.csproj.CoreCompileInputs.cache

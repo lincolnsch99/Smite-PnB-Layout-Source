@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -24,6 +25,7 @@ namespace Smite_PnB_Layout
         private bool hasPlayed, reversed = false;
         private MainWindow mainWindow;
         private ComboBox banCombo;
+        private string displaySide = "";
 
         public MainWindow MainWindow { get => mainWindow; set => mainWindow = value; }
 
@@ -34,17 +36,11 @@ namespace Smite_PnB_Layout
                 reversed = value;
                 if (reversed)
                 {
-                    godImage.RenderTransformOrigin = new Point(0.5, 0.5);
-                    ScaleTransform flipTrans = new ScaleTransform();
-                    flipTrans.ScaleX = -1;
-                    godImage.RenderTransform = flipTrans;
+                    displaySide = "_Right";
                 }
                 else
                 {
-                    godImage.RenderTransformOrigin = new Point(0.5, 0.5);
-                    ScaleTransform flipTrans = new ScaleTransform();
-                    flipTrans.ScaleX = 1;
-                    godImage.RenderTransform = flipTrans;
+                    displaySide = "_Left";
                 }
             }
         }
@@ -71,8 +67,11 @@ namespace Smite_PnB_Layout
                 else
                 {
                     this.Visibility = Visibility.Visible;
-                    godImage.Source = new BitmapImage(new Uri(mainWindow.ResourcesPath + "/CharacterImages/Bans/"
-                        + banSelection.Content.ToString() + ".png", UriKind.Absolute));
+                    if(File.Exists(mainWindow.ResourcesPath + "/CharacterImages/Bans/" + banSelection.Content.ToString() + displaySide + ".png"))
+                        godImage.Source = new BitmapImage(new Uri(mainWindow.ResourcesPath + "/CharacterImages/Bans/" + banSelection.Content.ToString() + displaySide + ".png", UriKind.Absolute));
+                    else
+                        godImage.Source = new BitmapImage(new Uri(mainWindow.ResourcesPath + "/CharacterImages/Bans/" + banSelection.Content.ToString() + ".png", UriKind.Absolute));
+
                     soundPlayer.Source = new Uri(mainWindow.ResourcesPath + "/Sounds/" + "hover.mp3", UriKind.Absolute);
                     soundPlayer.Volume = mainWindow.Volume;
                     soundPlayer.Play();
@@ -114,5 +113,6 @@ namespace Smite_PnB_Layout
             canvas.Height = BanControl.Height;
             canvas.Width = BanControl.Width;
         }
+
     }
 }

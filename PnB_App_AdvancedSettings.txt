@@ -1,0 +1,29 @@
+Global Settings: 
+- Size/Dimensions of Pick Displays
+- Size/Dimensions of Ban Displays
+- Size/Dimensions of Team Banner Displays
+- Size/Dimensions of Set Score
+- Size/Dimensions of Player Names (includes font size)
+- Size/Dimensions of Top Bans
+- Horizontal Alignment of Pick Display Names
+- Vertical Alignment of Pick Display Names
+- Animation Type for Pick Displays
+
+Individual Settings:
+- Position of each Pick Display
+- Position of each Ban Display
+- Position of each Team Banner
+- Position of each Score Display
+- Position of Player Names
+- Position of each Top Ban Display
+
+These advanced settings will be stored in the Resources folder, just in a layout.settings file or something. 
+
+Data.txt (in Application Folder) will be replaced with a .resources file and will now only
+store the file path for the most recent resources folder used.
+
+Advanced Settings will be an additional settings window that can be activated through a button on the Settings Window. Global Settings will be located near the top of the window and will always be visible. Individual Settings will have a drop down to select the category of settings, and then a panel below to display all the different individual settings options. At the bottom of said panel there will be an option to reset the currently selected category back to default settings. At the very bottom of this window there will four buttons:
+- Reset to Default: This will completely reset ALL settings back to their default values. 
+- Cancel: Exits the Advanced Settings window without applying any current changes that haven't been saved.
+- Preview: This will change the Display Window to reflect the changes that have been made, but this WILL NOT save the settings.
+- Apply: This will change the Display Window to reflect the changes that have been made and will save the settings to file. Since these are difficult to undo, a confirmation window will appear.

@@ -136,5 +136,7 @@
             <ComboBoxItem Content="1920x1080" Style="{StaticResource comboDesign}"/>
         </ComboBox>
         <Label Style="{StaticResource nameDesign}" Content="Resolution:" HorizontalAlignment="Left" Margin="242,592,0,0" VerticalAlignment="Top" Grid.Column="1"/>
+        <Label Style="{StaticResource nameDesign}" Content="Show God Names:" HorizontalAlignment="Left" Margin="242,639,0,0" VerticalAlignment="Top" Grid.Column="1"/>
+        <CheckBox x:Name="godNamesStatusCheck" Content="" Grid.Column="1" HorizontalAlignment="Left" Margin="385,645,0,0" VerticalAlignment="Top" Unchecked="godNamesStatusCheck_Unchecked" Checked="godNamesStatusCheck_Checked"/>
     </Grid>
 </Window>

@@ -37,6 +37,7 @@ namespace Smite_PnB_Layout
             teamOneCombo.SelectedIndex = 0;
             teamTwoCombo.SelectedIndex = 0;
             resolution_Combo.SelectedIndex = mainWindow.ResolutionIndex;
+            godNamesStatusCheck.IsChecked = mainWindow.ShowGodNames;
             if (!File.Exists(mainWindow.ResourcesPath + "/Display/.layout"))
             {
                 resolution_Combo.IsEnabled = false;
@@ -173,6 +174,7 @@ namespace Smite_PnB_Layout
             mainWindow.TryFileUpdate();
             mainWindow.UpdatePlayerNames();
             mainWindow.UpdateBanDatas();
+            mainWindow.SetGodNamesDisplayOnPicks(mainWindow.ShowGodNames);
             GrabAdvancedSettings();
         }
 
@@ -217,6 +219,17 @@ namespace Smite_PnB_Layout
         {
             mainWindow.ResolutionIndex = resolution_Combo.SelectedIndex;
             mainWindow.UpdateResolution();
+        }
+
+        private void godNamesStatusCheck_Unchecked(object sender, RoutedEventArgs e)
+        {
+            mainWindow.SetGodNamesDisplayOnPicks(false);
+        }
+
+        private void godNamesStatusCheck_Checked(object sender, RoutedEventArgs e)
+        {
+            mainWindow.ShowGodNames = (bool)godNamesStatusCheck.IsChecked;
+            mainWindow.SetGodNamesDisplayOnPicks(true);
         }
     }
 }

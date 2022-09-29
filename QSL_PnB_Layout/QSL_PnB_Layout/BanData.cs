@@ -93,7 +93,10 @@ namespace Smite_PnB_Layout
 
         public void AddBan(string godName)
         {
-            BanCounts[godName] += 1;
+            if (BanCounts.ContainsKey(godName))
+                BanCounts[godName] += 1;
+            else
+                BanCounts[godName] = 1;
         }
 
         public Dictionary<string, float> GetTopNBans(int n)

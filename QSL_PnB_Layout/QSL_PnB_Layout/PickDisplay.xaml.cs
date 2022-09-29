@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -24,10 +25,10 @@ namespace Smite_PnB_Layout
         private MainWindow mainWindow;
         private bool hasPlayed, reversed = false;
         private List<List<Image>> checkers;
-        private string animType;
+        private string animType, displaySide = "";
         private ComboBox pickCombo;
         private CheckBox lockCheck;
-        private int checkerAnimCount = 51;
+        private int checkerAnimCount = 25;
         private float checkerOverlap = 1f;
         private float nameHeightRatio = 25f / 250f;
         private float nameWidthRatio = 160f / 335f;
@@ -39,6 +40,7 @@ namespace Smite_PnB_Layout
                 mainWindow = value;
                 //godName.VerticalAlignment = mainWindow.NamesVertAlign;
                 //godName.HorizontalAlignment = mainWindow.NamesHorAlign;
+                hoveredRect.Visibility = Visibility.Hidden;
             }
         }
         public string AnimType { get => animType; set => animType = value; }
@@ -49,18 +51,12 @@ namespace Smite_PnB_Layout
                 reversed = value;
                 if(reversed)
                 {
-                    godImage.RenderTransformOrigin = new Point(0.5, 0.5);
-                    ScaleTransform flipTrans = new ScaleTransform();
-                    flipTrans.ScaleX = -1;
-                    godImage.RenderTransform = flipTrans;
+                    displaySide = "_Right";
                     godName.SetValue(Canvas.LeftProperty, double.Parse("0"));
                 }
                 else
                 {
-                    godImage.RenderTransformOrigin = new Point(0.5, 0.5);
-                    ScaleTransform flipTrans = new ScaleTransform();
-                    flipTrans.ScaleX = 1;
-                    godImage.RenderTransform = flipTrans;
+                    displaySide = "_Left";
                     godName.SetValue(Canvas.RightProperty, double.Parse("0"));
                 }
             } 
@@ -96,7 +92,8 @@ namespace Smite_PnB_Layout
 
         private void LockCheck_Unchecked(object sender, RoutedEventArgs e)
         {
-            hoveredRect.Visibility = Visibility.Visible;
+            //hoveredRect.Visibility = Visibility.Visible;
+            godImage.Opacity = 0.3;
         }
 
         private void LockCheck_Checked(object sender, RoutedEventArgs e)
@@ -148,8 +145,11 @@ namespace Smite_PnB_Layout
                 else
                 {
                     this.Visibility = Visibility.Visible;
-                    godImage.Source = new BitmapImage(new Uri(mainWindow.ResourcesPath + "/CharacterImages/Picks/"
-                        + pickSelection.Content.ToString() + ".png", UriKind.Absolute));
+                    if(File.Exists(mainWindow.ResourcesPath + "/CharacterImages/Picks/" + pickSelection.Content.ToString() + displaySide + ".png"))
+                        godImage.Source = new BitmapImage(new Uri(mainWindow.ResourcesPath + "/CharacterImages/Picks/" + pickSelection.Content.ToString() + displaySide + ".png", UriKind.Absolute));
+                    else
+                        godImage.Source = new BitmapImage(new Uri(mainWindow.ResourcesPath + "/CharacterImages/Picks/" + pickSelection.Content.ToString() + ".png", UriKind.Absolute));
+                    
                     godName.Content = pickSelection.Content.ToString();
                     if (lockCheck.IsChecked == true)
                     {
@@ -176,8 +176,8 @@ namespace Smite_PnB_Layout
                     }
                     else
                     {
-                        godImage.BeginAnimation(Image.OpacityProperty, new DoubleAnimation(0, 1, TimeSpan.FromSeconds(0.3f)));
-                        godName.BeginAnimation(OpacityProperty, new DoubleAnimation(0, 1, TimeSpan.FromSeconds(0.3f)));
+                        godImage.BeginAnimation(Image.OpacityProperty, new DoubleAnimation(0, 0.3, TimeSpan.FromSeconds(0.3f)));
+                        godName.BeginAnimation(OpacityProperty, new DoubleAnimation(0, 0.3, TimeSpan.FromSeconds(0.3f)));
                     }
                 }
             }
@@ -213,6 +213,7 @@ namespace Smite_PnB_Layout
         public void FadeIn()
         {
             godImage.BeginAnimation(Image.OpacityProperty, new DoubleAnimation(0, 1, TimeSpan.FromSeconds(1)));
+            godName.BeginAnimation(OpacityProperty, new DoubleAnimation(0, 1, TimeSpan.FromSeconds(1)));
         }
 
         private void UserControlObject_SizeChanged(object sender, SizeChangedEventArgs e)
@@ -247,7 +248,7 @@ namespace Smite_PnB_Layout
                 for (int i = 0; i < (int)(canvas.Height / checkerSize) + 2; i++)
                 {
                     List<int> indices = new List<int>();
-                    for (int j = (int)(canvas.Width / checkerSize) + 1; j >= 0 - ((int)(canvas.Height / checkerSize) + 2); j--)
+                    for (int j = (int)(canvas.Width / checkerSize) + 2; j >= 0 - ((int)(canvas.Height / checkerSize) + 2); j--)
                         indices.Add(i + j);
                     patternIndices.Add(indices);
                 }
@@ -257,7 +258,7 @@ namespace Smite_PnB_Layout
                 for (int i = ((int)(canvas.Height / checkerSize) + 2) - 1; i >= 0; i--)
                 {
                     List<int> indices = new List<int>();
-                    for (int j = 0 - ((int)(canvas.Height / checkerSize) + 2); j < (int)(canvas.Width / checkerSize) + 1; j++)
+                    for (int j = 0 - ((int)(canvas.Width / checkerSize) + 2); j < (int)(canvas.Width / checkerSize) + 1; j++)
                         indices.Add(i + j);
                     patternIndices.Add(indices);
                 }
@@ -269,7 +270,7 @@ namespace Smite_PnB_Layout
                 Random rand = new Random();
                 BitmapImage image = new BitmapImage(new Uri(mainWindow.ResourcesPath +
                         "/CharacterImages/CheckeredFadeShape.png", UriKind.Absolute));
-                while (rects.Count < (int)(canvas.Width / checkerSize) + 1)
+                while (rects.Count < (int)(canvas.Width / checkerSize) + 2)
                 {
                     Image newRect = new Image();
                     canvas.Children.Add(newRect);
@@ -298,6 +299,17 @@ namespace Smite_PnB_Layout
                 }
                 runningCount += deltaTime;
             }
+            godImage.BeginAnimation(Image.OpacityProperty, new DoubleAnimation(0, 1, TimeSpan.FromSeconds(1)));
+            godName.BeginAnimation(OpacityProperty, new DoubleAnimation(0, 1, TimeSpan.FromSeconds(1)));
+        }
+
+
+        public void SetNameDisplayStatus(bool active)
+        {
+            if (!active)
+                godName.Visibility = Visibility.Hidden;
+            else
+                godName.Visibility = Visibility.Visible;
         }
     }
 }
