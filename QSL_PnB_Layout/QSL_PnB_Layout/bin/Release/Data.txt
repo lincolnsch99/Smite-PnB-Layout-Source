@@ -1,6 +1,0 @@
--resources_path-
-C:/Users/Link the Exalted/Desktop/PnB-Layout-Official/PnB-Layout-Public/Resources
--resolution-
-0
--show_god_names-
-True

@@ -4,7 +4,7 @@
              xmlns:local="clr-namespace:Smite_PnB_Layout"
              Exit="Application_Exit"
              ShutdownMode="OnExplicitShutdown"
-             StartupUri="MainWindow.xaml">
+             StartupUri="PickBanDisplay/MainWindow.xaml">
     <Application.Resources>
         <Style x:Key="nameDesign" TargetType="Label">
             <Setter Property="FontFamily" Value="Resources/LEMONMILK-Medium.otf #LEMON MILK Medium"></Setter>

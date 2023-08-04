@@ -128,41 +128,41 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Compile Include="AdvancedSettings.xaml.cs">
+    <Compile Include="HirezApiInteraction\HirezAPI.cs" />
+    <Compile Include="HirezApiInteraction\Session.cs" />
+    <Compile Include="PickBanDisplay\AdvancedSettings.xaml.cs">
       <DependentUpon>AdvancedSettings.xaml</DependentUpon>
     </Compile>
     <Compile Include="BanData.cs" />
     <Compile Include="BanDataSubmission.cs" />
-    <Compile Include="BanDisplay.xaml.cs">
+    <Compile Include="PickBanDisplay\BanDisplay.xaml.cs">
       <DependentUpon>BanDisplay.xaml</DependentUpon>
     </Compile>
-    <Compile Include="InGameOverlay.xaml.cs">
+    <Compile Include="InGameOverlays\InGameOverlay.xaml.cs">
       <DependentUpon>InGameOverlay.xaml</DependentUpon>
     </Compile>
-    <Compile Include="PickDisplay.xaml.cs">
+    <Compile Include="PickBanDisplay\PickDisplay.xaml.cs">
       <DependentUpon>PickDisplay.xaml</DependentUpon>
     </Compile>
     <Compile Include="SettingsWindow.xaml.cs">
       <DependentUpon>SettingsWindow.xaml</DependentUpon>
     </Compile>
-    <Compile Include="SubmissionHistory.cs" />
-    <Compile Include="Team.cs" />
-    <Compile Include="TopBanDisplay.xaml.cs">
+    <Compile Include="PickBanDisplay\TopBanDisplay.xaml.cs">
       <DependentUpon>TopBanDisplay.xaml</DependentUpon>
     </Compile>
-    <Page Include="AdvancedSettings.xaml">
+    <Page Include="PickBanDisplay\AdvancedSettings.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="BanDisplay.xaml">
+    <Page Include="PickBanDisplay\BanDisplay.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="InGameOverlay.xaml">
+    <Page Include="InGameOverlays\InGameOverlay.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="MainWindow.xaml">
+    <Page Include="PickBanDisplay\MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
@@ -170,11 +170,11 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="MainWindow.xaml.cs">
+    <Compile Include="PickBanDisplay\MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Page Include="PickDisplay.xaml">
+    <Page Include="PickBanDisplay\PickDisplay.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -182,7 +182,7 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="TopBanDisplay.xaml">
+    <Page Include="PickBanDisplay\TopBanDisplay.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -238,13 +238,11 @@
     <Resource Include="Resources\Name_Display_250x87.png" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Achilles.mp3" />
     <Resource Include="Resources\Right.png" />
     <Resource Include="Resources\PnB.png" />
     <Resource Include="Resources\Scoreboard_Cover.png" />
     <Resource Include="Resources\UpNext.png" />
     <Resource Include="Resources\PnB_Layout_Logo.png" />
-    <Resource Include="smite_ducky.png" />
     <Resource Include="Resources\hover.mp3">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Resource>
@@ -253,11 +251,15 @@
     </Resource>
     <Resource Include="Resources\FinalBackground.png" />
     <Resource Include="Resources\Data.txt" />
-    <Resource Include="PnB_Layout_Logo.ico" />
+    <Resource Include="PnB_Layout_Logo.ico">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
     <Resource Include="Resources\Achilles.png" />
     <Resource Include="Resources\ArchonDragonsTeam.png" />
     <Resource Include="Resources\Agni.png" />
-    <Resource Include="Achilles.png" />
+    <Resource Include="PickBanDisplay\PnB_Layout_Logo.ico">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
     <Content Include="Resources\hover.wav" />
     <Resource Include="Resources\LayoutTemplate.png" />
     <Resource Include="Resources\Left.png" />
